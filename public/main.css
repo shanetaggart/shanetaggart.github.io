@@ -1,1 +1,1 @@
-body{display:grid;place-items:center;background-color:#132;color:#fff8e7;font-size:16px;font-family:"Lato",sans-serif}body h1{font-size:1.75rem}
+*{box-sizing:border-box}body{display:grid;place-items:center;background-color:#2c3330;color:#fff8e7;font-size:16px;font-family:"Lato",serif;margin:0}body h1,body h2,body h3,body h4,body h5,body h6{font-family:"Lato Black",sans-serif}body main{width:1200px;padding:0 2em;padding:2em 3em;display:grid;grid-template-columns:2fr 3fr;gap:2em}
