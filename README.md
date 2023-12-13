@@ -1,1 +1,1 @@
-[https://shanetaggart.github.io](https://shanetaggart.github.io){:target="\_blank" rel="noopener"}
+<a href="https://shanetaggart.github.io" rel="noreferrer noopener">https://shanetaggart.github.io</a>
