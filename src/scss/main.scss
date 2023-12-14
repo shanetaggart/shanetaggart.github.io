@@ -292,14 +292,30 @@ main {
                     text-align: center;
                 }
 
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    background-image: url('../assets/icons/cursor-white.png');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 1em;
-                    height: 1em;
+                .icon {
+                    font-style: normal;
+
+                    &::before {
+                        content: '';
+                        display: inline-grid;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 1em;
+                        height: 1em;
+                        margin: 0 0.25em;
+                    }
+
+                    &--cursor {
+                        &::before {
+                            background-image: url('../assets/icons/cursor-white.png');
+                        }
+                    }
+                    
+                    &--pointer {
+                        &::before {
+                            background-image: url('../assets/icons/pointer-white.png');
+                        }
+                    }
                 }
             }
         }
@@ -401,6 +417,10 @@ main {
 
                 @media screen and (max-width: 575px) {
                     width: 75%;
+                }
+
+                &:hover {
+                    cursor: pointer;
                 }
             }
             
