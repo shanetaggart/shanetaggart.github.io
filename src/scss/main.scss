@@ -50,7 +50,7 @@ body {
     margin: 0;
     position: relative;
 
-    a:not(.content-sections__work-table-of-contents-link) {
+    a:not(.content-sections__work-table-of-contents-link, .highlight) {
         color: inherit;
         text-decoration: inherit;
         position: relative;
@@ -67,6 +67,29 @@ body {
         &:not(.content-sections__projects-card-back-github):hover {
             background-color: $phthalo-green;
             border: 1px solid $bright-mint;
+        }
+    }
+
+    a.highlight {
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 2px;
+            width: 0%;
+            position: absolute;
+            bottom:-0.1em;
+            left: 0;
+            background-color: $bright-mint;
+            transition: width 0.25s ease;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
         }
     }
 
