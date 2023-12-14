@@ -95,6 +95,39 @@ body {
 
     .highlight {
         color: $bright-mint;
+        font-weight: normal;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .ahoy {
+        position: relative;
+        z-index: 10;
+        background-color: $extra-dark-phthalo-green;
+
+        &::before {
+            content: '⛵';
+            font-size: 0;
+            z-index: -10;
+            display: block;
+            visibility: visible;
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            transform: translateX(-50%);
+            transition: top 0.5s ease, font-size 0.5s ease;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            &::before {
+                font-size: 1.5em;
+                top: -50px;
+            }
+        }
     }
     
     #light {
