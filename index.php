@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Shane Taggart</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script type="text/javascript" src="public/js/main.min.js" defer></script>
-		<link rel="stylesheet" type="text/css" href="public/css/main.css" />
-	</head>
+<html lang="en">
+	<?php include 'includes/head.php'; ?>
 	<body>
 		<header class="header">
 			<nav class="header__nav">
@@ -68,7 +63,7 @@
 						<picture class="content-sections__profile-picture">
 							<img
 								src="public/assets/images/profile-picture.jpeg"
-								alt="Shane Taggart's profile picture"
+								alt="Shane Taggart's profile picture."
 							/>
 						</picture>
 					</aside>
@@ -372,5 +367,6 @@
 			</section>
 		</main>
 		<span id="light"></span>
+		<script type="text/javascript" src="public/js/main.min.js" defer></script>
 	</body>
 </html>
