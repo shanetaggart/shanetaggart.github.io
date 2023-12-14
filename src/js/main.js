@@ -103,7 +103,8 @@ By the way, if you want to turn the flashlight effect off, try double-clicking!`
                 
                 newActiveId = entry.target.id;
                 newActiveListItem = tableOfContents.querySelector('a[href="#' + newActiveId + '"]');
-                newActiveListItem.firstElementChild.classList.add('active');
+                console.log(newActiveListItem);
+                newActiveListItem.parentElement.classList.add('active');
             }
         });
     }, tableOfContentsOptions);
