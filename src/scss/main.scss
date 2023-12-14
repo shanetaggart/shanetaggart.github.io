@@ -180,16 +180,16 @@ body {
     background-color: rgba(13, 38, 25, 0.05);
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
 
+    @media screen and (max-width: 767px) {
+        display: none;
+        height: 0;
+    }
+
     &__nav {
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 2em;
-
-        @media screen and (max-width: 767px) {
-            display: none;
-            height: 0;
-        }
 
         &-list {
             list-style-type: none;
@@ -361,10 +361,15 @@ main {
             gap: 1em;
 
             @media screen and (max-width: 767px) {
-                grid-template-columns: 1fr 2fr;
+                display: block;
             }
 
             &-table-of-contents {
+
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+
                 ul {
                     list-style-type: none;
                     padding: 0 0 0 1em;
