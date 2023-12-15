@@ -418,7 +418,7 @@ main {
 .work-section {
     display: grid;
     gap: 1em;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 3fr 5fr;
     margin: 2em 0 0;
 
     @media screen and (max-width: 767px) {
@@ -426,6 +426,7 @@ main {
     }
 
     &__table-of-contents {
+        white-space: nowrap;
 
         @media screen and (max-width: 767px) {
             display: none;
@@ -482,6 +483,61 @@ main {
         article {
             margin: 0 0 5em 0;
             scroll-margin-top: 150px;
+        }
+    }
+
+    &__skills {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        .skill {
+            border: 1px solid #000;
+            border-radius: 1.25em;
+            padding: 0.25em 1em;
+
+            &--wordpress {
+                border-color: rgba(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            &--php {
+                border-color: rgb(119, 123, 179);
+                background-color: rgba(119, 123, 179, 0.2);
+            }
+
+            &--js {
+                border-color: rgb(247, 223, 30);
+                background-color: rgba(247, 223, 30, 0.2);
+            }
+
+            &--acf {
+                border-color: rgb(0, 218, 180);
+                background-color: rgba(0, 218, 180, 0.2);
+            }
+
+            &--sass {
+                border-color: rgb(207, 100, 154);
+                background-color: rgba(207, 100, 154, 0.2);
+            }
+
+            &--cornerstone {
+                border-color: rgb(255, 255, 255);
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            &--timber {
+                border-color: rgb(43, 64, 53);
+                background-color: rgba(43, 64, 53, 0.2);
+            }
+
+            &--twig {
+                border-color: rgb(186, 207, 41);
+                background-color: rgba(186, 207, 41, 0.2);
+            }
+
         }
     }
 }
