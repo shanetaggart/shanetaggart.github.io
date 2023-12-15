@@ -69,7 +69,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="site-header">
 			<nav>
 				<ul>
 					<li><a href="#bio">Bio</a></li>
@@ -104,94 +104,66 @@
 			</nav>
 		</header>
 		<main>
-			<section class="hero">
-				<p class="hero__greeting">
+			<section class="hero-section">
+				<p class="hero-section__greeting">
 					<strong class="highlight ahoy">Ahoy</strong>! My name is
 				</p>
-				<h1 class="hero__name">Shane Taggart</h1>
-				<h2 class="hero__title">
+				<h1 class="hero-section__name">Shane Taggart</h1>
+				<h2 class="hero-section__title">
 					An aspiring
-					<strong class="highlight bold">full-stack developer</strong>.
+					<strong class="highlight highlight--bold">full-stack developer</strong
+					>.
 				</h2>
 			</section>
-			<section class="content-sections" id="bio">
-				<h3 class="content-sections__heading">Bio</h3>
-				<div class="content-sections__two-columns">
-					<p class="content-sections__content">
+			<section class="content-section bio" id="bio">
+				<h3 class="content-section__heading">Bio</h3>
+				<div class="content-section__two-columns">
+					<picture class="bio-section__profile-picture">
+						<img
+							src="public/assets/images/profile-picture.jpeg"
+							alt="Shane Taggart's profile picture."
+						/>
+					</picture>
+					<p class="content-section__content">
 						Thanks for stopping by! My name is Shane Taggart, and I've had an
 						aptitude for technology for as long as I can remember. In the last
 						few years I've taken more of a liking to front-end software
 						development, but more recently I'm looking to expand my skillset
 						into that of a full-stack software developer.
 					</p>
-					<aside class="content-sections__profile">
-						<picture class="content-sections__profile-picture">
-							<img
-								src="public/assets/images/profile-picture.jpeg"
-								alt="Shane Taggart's profile picture."
-							/>
-						</picture>
-					</aside>
 				</div>
 			</section>
-			<section class="content-sections" id="work">
-				<h3 class="content-sections__heading">Work</h3>
-				<p class="content-sections__content">
+			<section class="content-section" id="work">
+				<h3 class="content-section__heading">Work</h3>
+				<p class="content-section__content">
 					Here are a few things I've worked on in my recent experience:
 				</p>
-				<div class="content-sections__work">
-					<nav
-						class="content-sections__work-table-of-contents"
-						id="table-of-contents"
-					>
-						<ul class="content-sections__work-table-of-contents-list">
+				<div class="work-section">
+					<nav class="work-section__table-of-contents" id="table-of-contents">
+						<ul>
 							<li class="active">
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-one"
-									>Site One</a
-								>
+								<a href="#site-one">Site One</a>
 							</li>
 							<li>
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-two"
-									>Site Two</a
-								>
+								<a href="#site-two">Site Two</a>
 							</li>
 							<li>
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-three"
-									>Site Three</a
-								>
+								<a href="#site-three">Site Three</a>
 							</li>
 							<li>
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-four"
-									>Site Four</a
-								>
+								<a href="#site-four">Site Four</a>
 							</li>
 							<li>
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-five"
-									>Site Five</a
-								>
+								<a href="#site-five">Site Five</a>
 							</li>
 							<li>
-								<a
-									class="content-sections__work-table-of-contents-link"
-									href="#site-six"
-									>Site Six</a
-								>
+								<a href="#site-six">Site Six</a>
 							</li>
 						</ul>
 					</nav>
 					<div>
 						<article id="site-one">
-							<h3>Site One</h3>
+							<h4>Site One</h4>
 							<p>
 								This is some text about stuff I did while working on Site One.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -210,7 +182,7 @@
 							<p>PHP, Timber, Twig</p>
 						</article>
 						<article id="site-two">
-							<h3>Site Two</h3>
+							<h4>Site Two</h4>
 							<p>
 								This is some text about stuff I did while working on Site Two.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -229,7 +201,7 @@
 							<p>PHP, WordPress</p>
 						</article>
 						<article id="site-three">
-							<h3>Site Three</h3>
+							<h4>Site Three</h4>
 							<p>
 								This is some text about stuff I did while working on Site Three.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -248,7 +220,7 @@
 							<p>ACF, Twig</p>
 						</article>
 						<article id="site-four">
-							<h3>Site Four</h3>
+							<h4>Site Four</h4>
 							<p>
 								This is some text about stuff I did while working on Site Four.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -267,7 +239,7 @@
 							<p>PHP, WordPress</p>
 						</article>
 						<article id="site-five">
-							<h3>Site Five</h3>
+							<h4>Site Five</h4>
 							<p>
 								This is some text about stuff I did while working on Site Five.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -286,7 +258,7 @@
 							<p>PHP, WordPress</p>
 						</article>
 						<article id="site-six">
-							<h3>Site Six</h3>
+							<h4>Site Six</h4>
 							<p>
 								This is some text about stuff I did while working on Site Six.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -307,103 +279,99 @@
 					</div>
 				</div>
 			</section>
-			<section class="content-sections" id="projects">
-				<h3 class="content-sections__heading">Projects</h3>
-				<p class="content-sections__content">
+			<section class="content-section" id="projects">
+				<h3 class="content-section__heading">Projects</h3>
+				<p class="content-section__content">
 					When I'm not trying out new recipes, taking care of my two daughters
 					or their furry siblings, you can find me working on personal projects:
 				</p>
-				<p class="content-sections__content--instructions">
-					<i class="icon icon--cursor">Click</i> /
-					<i class="icon icon--pointer">Tap</i> each card to flip them
-				</p>
-				<div class="content-sections__projects">
-					<article class="content-sections__projects-card">
-						<div class="content-sections__projects-card-container">
-							<div class="content-sections__projects-card-front">
-								<div class="content-sections__projects-card-front-details">
-									<h3 class="content-sections__projects-card-front-title">
+				<div class="projects-section">
+					<article class="projects-section__card">
+						<div class="projects-section__card-container">
+							<div class="projects-section__card-front">
+								<div class="projects-section__card-front-details">
+									<h3 class="projects-section__card-front-title">
 										Check Burn Ban
 									</h3>
-									<p class="content-sections__projects-card-front-subtitle">
+									<p class="projects-section__card-front-subtitle">
 										Web scraper
 									</p>
 								</div>
 								<div
-									class="content-sections__projects-card-front-skills"
+									class="projects-section__card-front-skills"
 									aria-hidden="true"
 								>
 									<div class="python"></div>
 								</div>
 							</div>
-							<div class="content-sections__projects-card-back">
-								<p class="content-sections__projects-card-back-description">
+							<div class="projects-section__card-back">
+								<p class="projects-section__card-back-description">
 									I made a scraper to check the burn ban info for a smart home.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github icon icon--github-black"
+									class="projects-section__card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/check_burn_ban"
 									target="_blank"
 								></a>
 							</div>
 						</div>
 					</article>
-					<article class="content-sections__projects-card">
-						<div class="content-sections__projects-card-container">
-							<div class="content-sections__projects-card-front">
-								<div class="content-sections__projects-card-front-details">
-									<h3 class="content-sections__projects-card-front-title">
+					<article class="projects-section__card">
+						<div class="projects-section__card-container">
+							<div class="projects-section__card-front">
+								<div class="projects-section__card-front-details">
+									<h3 class="projects-section__card-front-title">
 										Advent of Code 2023
 									</h3>
-									<p class="content-sections__projects-card-front-subtitle">
+									<p class="projects-section__card-front-subtitle">
 										Annual logic puzzles
 									</p>
 								</div>
 								<div
-									class="content-sections__projects-card-front-skills"
+									class="projects-section__card-front-skills"
 									aria-hidden="true"
 								>
 									<div class="python"></div>
 								</div>
 							</div>
-							<div class="content-sections__projects-card-back">
-								<p class="content-sections__projects-card-back-description">
+							<div class="projects-section__card-back">
+								<p class="projects-section__card-back-description">
 									Working through these puzzles has been very humbling.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github icon icon--github-black"
+									class="projects-section__card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/advent_of_code_2023"
 									target="_blank"
 								></a>
 							</div>
 						</div>
 					</article>
-					<article class="content-sections__projects-card">
-						<div class="content-sections__projects-card-container">
-							<div class="content-sections__projects-card-front">
-								<div class="content-sections__projects-card-front-details">
-									<h3 class="content-sections__projects-card-front-title">
+					<article class="projects-section__card">
+						<div class="projects-section__card-container">
+							<div class="projects-section__card-front">
+								<div class="projects-section__card-front-details">
+									<h3 class="projects-section__card-front-title">
 										Overlay Updater
 									</h3>
-									<p class="content-sections__projects-card-front-subtitle">
+									<p class="projects-section__card-front-subtitle">
 										Live-streaming tool
 									</p>
 								</div>
 								<div
-									class="content-sections__projects-card-front-skills"
+									class="projects-section__card-front-skills"
 									aria-hidden="true"
 								>
 									<div class="php"></div>
 									<div class="js"></div>
 								</div>
 							</div>
-							<div class="content-sections__projects-card-back">
-								<p class="content-sections__projects-card-back-description">
+							<div class="projects-section__card-back">
+								<p class="projects-section__card-back-description">
 									I needed a solution for updating information displayed on an
 									overlay for our live-streams.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github icon icon--github-black"
+									class="projects-section__card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/overlay_updater"
 									target="_blank"
 								></a>
@@ -411,9 +379,15 @@
 						</div>
 					</article>
 				</div>
+				<footer>
+					<p class="content-section__content--instructions">
+						<i class="icon icon--cursor">Click</i> /
+						<i class="icon icon--pointer">Tap</i> each card to flip them
+					</p>
+				</footer>
 			</section>
 		</main>
-		<footer>
+		<footer class="site-footer">
 			<p>
 				You can connect with me on
 				<a
