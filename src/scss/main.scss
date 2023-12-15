@@ -142,8 +142,6 @@ body {
 
 
     .icon {
-        padding: 1rem;
-
         &::before {
             content: '';
             width: 1.5rem;
@@ -491,7 +489,7 @@ main {
         place-items: center;
     }
 
-    &__card {
+    .projects-card {
         background-color: transparent;
         width: 100%;
         height: 250px;
@@ -505,11 +503,7 @@ main {
             cursor: pointer;
         }
 
-        &.flipped .projects-section__card-container {
-            transform: rotateY(180deg);
-        }
-
-        &-container {
+        &__container {
             position: relative;
             width: 100%;
             height: 100%;
@@ -518,81 +512,91 @@ main {
             box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .15);
         }
 
-        &-front, &-back {
+        &__front, &__back {
             position: absolute;
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             padding: 1.5em;
             display: grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+
+            h3 {
+                line-height: $body-line-height;
+            }
         }
         
-        &-front {
+        &__front {
             background-color: $phthalo-green;
             color: $light-font;
             border-radius: 0.5em;
             border: 1px solid $bright-mint;
-            
-            &-title {
-                align-self: start;
-            }
-    
-            &-skills {
-                display: flex;
-                align-self: flex-end;
-                align-items: center;
-                gap: 1em;
-    
-                .python,
-                .php,
-                .js {
-                    &::before {
-                        content: '';
-                        display: inline-block;
-                        width: 1.5em;
-                        height: 1.5em;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-    
-                .python {
-                    &::before{
-                        background-image: url('../assets/icons/python-white.png');
-                    }
-                }
-    
-                .php {
-                    &::before{
-                        background-image: url('../assets/icons/php-white.png');
-                    }
-                }
-    
-                .js {
-                    &::before{
-                        background-image: url('../assets/icons/js-white.png');
-                    }
-                }
-            }
         }
         
-        &-back {
+        &__back {
             background-color: $cosmic-latte;
             color: $dark-font;
             transform: rotateY(180deg);
             border-radius: 0.5em;
-    
-            &-description {
-                align-self: start;
-            }
-    
-            &-github {
+
+            a {
                 align-self: flex-end;
-                justify-self: center;
+                justify-self: flex-end;
                 display: flex;
                 gap: 1em;
             }
+        }
+
+        &__title {
+            align-self: start;
+        }
+
+        &__skills {
+            display: flex;
+            align-self: flex-end;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .skill {
+            &--python,
+            &--php,
+            &--js {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 1.5em;
+                    height: 1.5em;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+    
+            &--python {
+                &::before{
+                    background-image: url('../assets/icons/python-white.png');
+                }
+            }
+    
+            &--php {
+                &::before{
+                    background-image: url('../assets/icons/php-white.png');
+                }
+            }
+    
+            &--js {
+                &::before{
+                    background-image: url('../assets/icons/js-white.png');
+                }
+            }
+    
+            &__description {
+                align-self: start;
+            }
+        }
+
+        &.flipped .projects-card__container {
+            transform: rotateY(180deg);
         }
     }
 }
