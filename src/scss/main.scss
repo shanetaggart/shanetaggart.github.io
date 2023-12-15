@@ -384,6 +384,7 @@ main {
     display: grid;
     gap: 1.5em;
     grid-template-columns: 1fr;
+    place-items: center;
 
     &__profile-picture {
         max-width: 80%;
