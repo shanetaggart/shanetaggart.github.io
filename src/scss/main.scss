@@ -52,6 +52,7 @@ $line-height-1: 129px;
 
 $border-radius: 0.5rem;
 $breakpoint-vertical-tablet-up: 768px;
+$darken-50: rgba(0, 0, 0, .5);
 
 /**************
  * Animations *
@@ -586,7 +587,7 @@ main {
 .site-footer {
     width: 100%;
     padding: 1em 2em;
-    background-color: rgba(13,38,25,.05);
+    background-color: $darken-50;
     box-shadow: rgba(255, 255, 255, 0.05) 0px -1px 1px 1px;
     display: grid;
     place-items: center;
