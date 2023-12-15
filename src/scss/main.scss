@@ -472,9 +472,11 @@ main {
         }
     }
 
-    article {
-        scroll-margin-top: 150px;
-        margin: 0 0 5em 0;
+    &__articles {
+        article {
+            scroll-margin-top: 150px;
+            margin: 0 0 5em 0;
+        }
     }
 }
 
