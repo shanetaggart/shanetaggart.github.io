@@ -69,41 +69,47 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<nav class="header__nav">
-				<ul class="header__nav-list">
+		<header>
+			<nav>
+				<ul>
 					<li><a href="#bio">Bio</a></li>
 					<li><a href="#work">Work</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#connect">Connect</a></li>
+					<li>
+						<a
+							class="icon icon--linked-in"
+							href="https://www.linkedin.com/in/shane-taggart-8a43622a2/"
+							target="_blank"
+						>
+						</a>
+					</li>
+					<li>
+						<a
+							class="icon icon--github"
+							href="https://github.com/shanetaggart"
+							target="_blank"
+						>
+						</a>
+					</li>
+					<li>
+						<a
+							class="icon icon--email"
+							href="mailto:staggart@eastlink.ca"
+							target="_blank"
+						>
+						</a>
+					</li>
 				</ul>
-				<a
-					class="header__socials social linked-in"
-					href="https://www.linkedin.com/in/shane-taggart-8a43622a2/"
-					target="_blank"
-				>
-				</a>
-				<a
-					class="header__socials social github"
-					href="https://github.com/shanetaggart"
-					target="_blank"
-				>
-				</a>
-				<a
-					class="header__socials social email"
-					href="mailto:staggart@eastlink.ca"
-					target="_blank"
-				>
-				</a>
 			</nav>
 		</header>
 		<main>
-			<section class="details-and-nav">
-				<p class="details-and-nav__greeting">
+			<section class="hero">
+				<p class="hero__greeting">
 					<strong class="highlight ahoy">Ahoy</strong>! My name is
 				</p>
-				<h1 class="details-and-nav__name">Shane Taggart</h1>
-				<h2 class="details-and-nav__title">
+				<h1 class="hero__name">Shane Taggart</h1>
+				<h2 class="hero__title">
 					An aspiring
 					<strong class="highlight bold">full-stack developer</strong>.
 				</h2>
@@ -335,7 +341,7 @@
 									I made a scraper to check the burn ban info for a smart home.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github social github-black"
+									class="content-sections__projects-card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/check_burn_ban"
 									target="_blank"
 								></a>
@@ -365,7 +371,7 @@
 									Working through these puzzles has been very humbling.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github social github-black"
+									class="content-sections__projects-card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/advent_of_code_2023"
 									target="_blank"
 								></a>
@@ -397,7 +403,7 @@
 									overlay for our live-streams.
 								</p>
 								<a
-									class="content-sections__projects-card-back-github social github-black"
+									class="content-sections__projects-card-back-github icon icon--github-black"
 									href="https://github.com/shanetaggart/overlay_updater"
 									target="_blank"
 								></a>
@@ -406,32 +412,27 @@
 					</article>
 				</div>
 			</section>
-			<section class="content-sections" id="connect">
-				<h3 class="content-sections__heading">Connect</h3>
-				<p class="content-sections__content">
-					You can connect with me on
-					<a
-						class="highlight"
-						href="https://www.linkedin.com/in/shane-taggart-8a43622a2/"
-						target="_blank"
-						>LinkedIn</a
-					>, or see what I've been working with on
-					<a
-						class="highlight"
-						href="https://github.com/shanetaggart"
-						target="_blank"
-						>GitHub</a
-					>. Feel free to
-					<a
-						class="highlight"
-						href="mailto:staggart@eastlink.ca"
-						target="_blank"
-						>send me an email</a
-					>
-					if you have any questions!
-				</p>
-			</section>
 		</main>
+		<footer>
+			<p>
+				You can connect with me on
+				<a
+					href="https://www.linkedin.com/in/shane-taggart-8a43622a2/"
+					target="_blank"
+					>LinkedIn</a
+				>, or see what I've been working with on
+				<a href="https://github.com/shanetaggart" target="_blank">GitHub</a>.
+				Feel free to
+				<a href="mailto:staggart@eastlink.ca" target="_blank"
+					>send me an email</a
+				>
+				if you have any questions!
+			</p>
+			<p class="copyright">
+				Copyright &copy; 2023 Shane Taggart - Icons by
+				<a href="https://icons8.com/">icons8.com</a>
+			</p>
+		</footer>
 		<span id="light"></span>
 		<script type="text/javascript" src="public/js/main.min.js" defer></script>
 	</body>
