@@ -1,0 +1,63 @@
+/***********
+ * Colors *
+ ***********/
+
+// Greens
+$bright-mint: #0FD974;
+$dark-phthalo-green: #1D3328;
+$extra-dark-phthalo-green: #0D2619;
+$extra-dark-phthalo-green-alpha:rgba(13, 38, 25, 0.05);
+$light-phthalo-green: #367354;
+$phthalo-green: #132;
+$pine-green: #2B4035;
+
+// Accents
+$cosmic-latte: #fff8e7;
+
+/*********
+ * Fonts *
+ *********/
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/InterVariableFont.ttf) format('truetype');
+}
+
+// Family.
+$body-font-family: 'Inter', serif;
+
+// Colors
+$dark-font: $extra-dark-phthalo-green;
+$light-font: $cosmic-latte;
+
+// Weights.
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+
+// Golden Ratio font sizes.
+$tiny-font-size: 13px;
+$tiny-line-height: 25px;
+
+$body-font-size: 16px;
+$body-line-height: 29px;
+
+$font-size-4: 20px;
+$line-height-4: 35px;
+
+$font-size-3: 26px;
+$line-height-3: 44px;
+
+$font-size-2: 33px;
+$line-height-2: 54px;
+
+$font-size-1: 84px;
+$line-height-1: 129px;
+
+/*********************
+ * General Variables *
+ ********************/
+
+$border-radius: 0.5rem;
+$breakpoint-vertical-tablet-up: 768px;
+$darken-50: rgba(0, 0, 0, .5);
+$frosted-glass: blur(1rem);

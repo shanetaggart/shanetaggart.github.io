@@ -79,11 +79,11 @@ By the way, if you want to turn the flashlight effect off, try double-clicking!`
         window.addEventListener('scroll', (event) => {
             if (window.scrollY > 0) {
                 header.style.boxShadow = '0px 1px 1px 1px rgba(255, 255, 255, 0.05)';
-                header.style.backdropFilter = 'blur(15px)';
+                header.classList.add('frosted');
                 
             } else {
                 header.style.boxShadow = 'none';
-                header.style.backdropFilter = 'none';
+                header.classList.remove('frosted');
             }
         });
     }
