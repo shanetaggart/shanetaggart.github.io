@@ -131,6 +131,10 @@ body {
         line-height: $line-height-4;
     }
 
+    i {
+        font-style: normal;
+    }
+
     .highlight {
         color: $bright-mint;
         font-weight: 400;
@@ -151,15 +155,9 @@ body {
             background-repeat: no-repeat;
         }
 
-        &--linked-in {
+        &--linkedin {
             &::before {
                 background-image: url('../assets/icons/linkedin.svg');
-            }
-        }
-    
-        &--linked-in-black {
-            &::before {
-                background-image: url('../assets/icons/linked-in-black.png');
             }
         }
     
@@ -181,6 +179,38 @@ body {
         &--email {
             &::before {
                 background-image: url('../assets/icons/email.svg');
+            }
+        }
+
+        &--python {
+            &::before{
+                background-image: url('../assets/icons/python.svg');
+            }
+        }
+
+        &--php {
+            &::before{
+                background-image: url('../assets/icons/php.svg');
+                width: 2em;
+                height: 2em;
+            }
+        }
+
+        &--js {
+            &::before{
+                background-image: url('../assets/icons/js.svg');
+            }
+        }
+
+        &--cursor {
+            &::before {
+                background-image: url('../assets/icons/cursor.svg');
+            }
+        }
+        
+        &--pointer {
+            &::before {
+                background-image: url('../assets/icons/pointer.svg');
             }
         }
     }
@@ -282,28 +312,9 @@ main {
             text-align: center;
 
             .icon {
-                font-style: normal;
-
                 &::before {
-                    content: '';
                     display: inline-grid;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 1em;
-                    height: 1em;
-                    margin: 0 0.25em;
-                }
-
-                &--cursor {
-                    &::before {
-                        background-image: url('../assets/icons/cursor-white.png');
-                    }
-                }
-                
-                &--pointer {
-                    &::before {
-                        background-image: url('../assets/icons/pointer-white.png');
-                    }
+                    transform: translateY(20%);
                 }
             }
         }
@@ -538,6 +549,10 @@ main {
             color: $dark-font;
             transform: rotateY(180deg);
             border-radius: 0.5em;
+            
+            &__description {
+                align-self: start;
+            }
 
             a {
                 align-self: flex-end;
@@ -556,43 +571,6 @@ main {
             align-self: flex-end;
             align-items: center;
             gap: 1em;
-        }
-
-        .skill {
-            &--python,
-            &--php,
-            &--js {
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 1.5em;
-                    height: 1.5em;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-            }
-    
-            &--python {
-                &::before{
-                    background-image: url('../assets/icons/python-white.png');
-                }
-            }
-    
-            &--php {
-                &::before{
-                    background-image: url('../assets/icons/php-white.png');
-                }
-            }
-    
-            &--js {
-                &::before{
-                    background-image: url('../assets/icons/js-white.png');
-                }
-            }
-    
-            &__description {
-                align-self: start;
-            }
         }
 
         &.flipped .projects-card__container {
