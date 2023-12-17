@@ -377,12 +377,11 @@ body {
     justify-content: center;
 
     &__profile-picture {
-        max-width: 250px;
         justify-self: center;
 
         img {
-            width: 100%;
-            height: 100%;
+            width: 250px;
+            height: 250px;
             border: 1px solid $phthalo-green;
             filter: grayscale(1);
             transition: transform $quick-ease, box-shadow $quick-ease, filter $quick-ease;
@@ -402,8 +401,6 @@ body {
             order: 2;
             position: relative;
             z-index: 30;
-            width: 250px;
-            height: 250px;
         }
     }
 }
