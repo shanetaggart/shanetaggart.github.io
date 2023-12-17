@@ -22,10 +22,11 @@ $white: #fff;
 @font-face {
     font-family: 'Inter';
     src: url(../fonts/InterVariableFont.ttf) format('truetype');
+    font-display: swap;
 }
 
 // Family.
-$font-family-inter: 'Inter', serif;
+$font-family-inter: 'Inter', sans-serif;
 
 // Colors
 $dark-font: $extra-dark-phthalo-green;

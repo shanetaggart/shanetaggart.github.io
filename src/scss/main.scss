@@ -377,7 +377,8 @@ body {
     justify-content: center;
 
     &__profile-picture {
-        max-width: 100%;
+        max-width: 250px;
+        justify-self: center;
 
         img {
             width: 100%;
