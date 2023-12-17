@@ -131,10 +131,13 @@
 						<h3 class="content-section__heading">Bio</h3>
 					</header>
 					<div class="bio-section">
-						<picture class="bio-section__profile-picture">
+						<picture class="bio-section__profile-picture">					
+							<source srcset="public/assets/images/profile-picture-1000x1000.webp 4x" media="(min-width: 1024px)">
+							<source srcset="public/assets/images/profile-picture-750x750.webp 3x" media="(min-width: 768px)">
+							<source srcset="public/assets/images/profile-picture-500x500.webp 2x" media="(min-width: 425px)">
+							<source srcset="public/assets/images/profile-picture-250x250.webp 1x" media="(min-width: 0px)">
 							<img
 								src="public/assets/images/profile-picture-250x250.webp"
-								srcset="public/assets/images/profile-picture-500x500.webp 500w"
 								width="250"
 								height="250"
 								alt="Shane Taggart's profile picture."
