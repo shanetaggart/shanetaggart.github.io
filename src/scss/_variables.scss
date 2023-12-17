@@ -6,13 +6,14 @@
 $bright-mint: #0FD974;
 $dark-phthalo-green: #1D3328;
 $extra-dark-phthalo-green: #0D2619;
-$extra-dark-phthalo-green-alpha:rgba(13, 38, 25, 0.05);
 $light-phthalo-green: #367354;
 $phthalo-green: #132;
 $pine-green: #2B4035;
 
 // Accents
 $cosmic-latte: #fff8e7;
+$black: #000;
+$white: #fff;
 
 /*********
  * Fonts *
@@ -24,7 +25,7 @@ $cosmic-latte: #fff8e7;
 }
 
 // Family.
-$body-font-family: 'Inter', serif;
+$font-family-inter: 'Inter', serif;
 
 // Colors
 $dark-font: $extra-dark-phthalo-green;
@@ -34,30 +35,44 @@ $light-font: $cosmic-latte;
 $font-weight-bold: 700;
 $font-weight-normal: 400;
 
-// Golden Ratio font sizes.
-$tiny-font-size: 13px;
-$tiny-line-height: 25px;
+// Golden Ratio and font sizes.
+$golden-ratio: 1.618;
+$rounding-interval: 1;
+$line-height: round(nearest, $golden-ratio, $rounding-interval);
 
-$body-font-size: 16px;
-$body-line-height: 29px;
-
-$font-size-4: 20px;
-$line-height-4: 35px;
-
-$font-size-3: 26px;
-$line-height-3: 44px;
-
-$font-size-2: 33px;
-$line-height-2: 54px;
-
-$font-size-1: 84px;
-$line-height-1: 129px;
+$font-size-4: 1.25rem;
+$font-size-3: 1.75rem;
+$font-size-2: 2rem;
+$font-size-1: 5.25rem;
 
 /*********************
  * General Variables *
  ********************/
 
+// Alphas
+$low-alpha: 0.05;
+$low-mid-alpha: 0.2;
+
+// Timings
+$quick-ease: 0.25s ease;
+$medium-ease: 0.5s ease;
+
+// Other
 $border-radius: 0.5rem;
-$breakpoint-vertical-tablet-up: 768px;
-$darken-50: rgba(0, 0, 0, .5);
+$flash-light: 0 0 250px 250px;
 $frosted-glass: blur(1rem);
+$scroll-margin: 150px;
+$site-width: min(100%, 1000px);
+$site-desktop-padding: 0 2em;
+$site-mobile-padding: 0 1em;
+$header-shadow: 0px 1px 1px 1px rgba($white, $low-alpha);
+$footer-shadow: 0px -1px 1px 1px rgba($white, $low-alpha);
+$header-divider: 2px solid $phthalo-green;
+
+
+/***************
+* Breakpoints *
+***************/
+
+$breakpoint-up-vertical-tablet: 768px;
+$breakpoint-up-mobile: 426px;
