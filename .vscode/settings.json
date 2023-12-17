@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.fontSize": 20,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.autoClosingBrackets": "never",
+    "editor.codeActionsOnSave": {},
+    "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false,
+    "html.format.enable": false,
+    "html.format.indentInnerHtml": true,
+    "html.format.unformatted": "area, base, br, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbr"
+}
