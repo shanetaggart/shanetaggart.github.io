@@ -157,14 +157,19 @@ body {
         }
     }
 
-
-    #light {
+    #flashlight {
         box-shadow: $flash-light $light-font;
         mix-blend-mode: overlay;
-        opacity: 0;
         position: absolute;
         transition: opacity $medium-ease;
         z-index: 20;
+        left: 30%;
+        top: 4em;
+        opacity: 0.4;
+
+        @media screen and (min-width: $breakpoint-up-vertical-tablet) {
+            opacity: 0;
+        }
     }
 }
 
