@@ -15,7 +15,55 @@ export function checkForMobile(mobileBreakpointWidth) {
     
     return isMobileDevice;
 
-};
+}
+
+
+export function generateTableOfContents(parentNode, contentClass, tableClass) {
+    
+    let parent = document.querySelector(parentNode);
+    let content = document.querySelector(contentClass);
+
+    let tableOfContents = document.createElement('nav');
+    let unorderedList = document.createElement('ul');
+
+    let articles = [...content.children];
+
+    articles.forEach((article) => {
+
+        let currentArticleHeading = article.querySelector('h4');
+        let articleHeading = currentArticleHeading.innerText;
+
+        let articleId = sanitizeID(articleHeading);
+        
+        currentArticleHeading.parentElement.id = articleId;
+
+        let listItem = document.createElement('li');
+        let anchor = document.createElement('a');
+
+        anchor.href = '#' + articleId;
+        anchor.innerText = articleHeading;
+
+        listItem.appendChild(anchor);
+        unorderedList.appendChild(listItem);
+
+    });
+
+    tableOfContents.classList.add(tableClass);
+    tableOfContents.appendChild(unorderedList);
+
+    parent.insertBefore(tableOfContents, content);
+
+}
+
+export function sanitizeID(string) {
+    
+    string = string.replaceAll(' ', '-');
+    string = string.toLowerCase();
+    
+    return string;
+
+}
+
 
 export function watchElementPosition(entries) {
     
@@ -32,7 +80,7 @@ export function watchElementPosition(entries) {
     
             } else if (entryElementName == 'H4') {
     
-                parent = document.querySelector('#table-of-contents');
+                parent = document.querySelector('.work-section__table-of-contents');
     
             }
             

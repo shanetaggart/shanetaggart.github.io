@@ -1,31 +1,31 @@
-import { checkForMobile, watchElementPosition } from  './helpers.js';
+import { checkForMobile, generateTableOfContents, watchElementPosition } from  './helpers.js';
 
-/**
- * ####################
- * # Console Messages #
- * ####################
- */
-
-const welcome = '%cAhoy! \u26F5\n';
-const welcomeStyle = 'font-size: 2rem;';
-const intro = `%cWelcome to my portfolio website! I hope you have fun looking around.\n\nIf you have any questions, please feel free to contact me!\n\nBy the way, if you want to turn the flashlight effect off, try double-clicking!`;
-const introStyle = 'font-size: 1.25rem;';
-
-console.log(welcome + intro, welcomeStyle, introStyle);
-
-
-/**
- * ####################
- * # Global Variables #
- * ####################
- */
-
-const mobileBreakpointWidth = 767;
-const isMobileDevice = checkForMobile(mobileBreakpointWidth);
-
-
-addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
     
+
+
+    /**
+     * ####################
+     * # Console Messages #
+     * ####################
+     */
+
+    const welcome = '%cAhoy! \u26F5\n';
+    const welcomeStyle = 'font-size: 2rem;';
+    const intro = `%cWelcome to my portfolio website! I hope you have fun looking around.\n\nIf you have any questions, please feel free to contact me!\n\nBy the way, if you want to turn the flashlight effect off, try double-clicking!`;
+    const introStyle = 'font-size: 1.25rem;';
+
+    console.log(welcome + intro, welcomeStyle, introStyle);
+
+
+    /**
+     * ####################
+     * # Global Variables #
+     * ####################
+     */
+
+    const mobileBreakpointWidth = 767;
+    const isMobileDevice = checkForMobile(mobileBreakpointWidth);
 
 
     /**
@@ -113,6 +113,15 @@ addEventListener("DOMContentLoaded", (event) => {
         });
 
     }
+
+
+    /**
+     * ##########################
+     * # Intersection Observers #
+     * ##########################
+     */
+
+    generateTableOfContents('.work-section', '.work-section__articles', 'work-section__table-of-contents');
 
 
     /**
