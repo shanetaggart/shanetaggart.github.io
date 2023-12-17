@@ -2,70 +2,74 @@
 <html lang="en">
 	<head>
 		<!-- Charset and Viewport declarations -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Standard metadata -->
 		<title>Shane Taggart</title>
-		<meta name="application-name" content="Shane Taggart" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="application-name" content="Shane Taggart">
 		<meta
 			name="description"
 			content="Shane Taggart is a software developer who builds elegant and performant web applications."
-		/>
-		<meta name="author" content="Shane Taggart" />
+		>
+		<meta name="author" content="Shane Taggart">
 
 		<!-- OGP Facebook metadata -->
-		<meta property="og:title" content="Shane Taggart" />
+		<meta property="og:title" content="Shane Taggart">
 		<meta
 			property="og:description"
 			content="Shane Taggart is a software developer who builds elegant and performant web applications."
-		/>
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://shanetaggart.github.io/" />
+		>
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://shanetaggart.github.io/">
 		<meta
 			property="og:image"
 			content="https://shanetaggart.github.io/public/assets/images/profile-picture.jpeg"
-		/>
-		<meta property="og:image:alt" content="Shane Taggart's profile picture." />
-		<meta property="og:locale" content="en_CA" />
+		>
+		<meta property="og:image:alt" content="Shane Taggart's profile picture.">
+		<meta property="og:locale" content="en_CA">
 
 		<!-- OGP Twitter/X metadata -->
-		<meta name="twitter:title" content="Shane Taggart" />
+		<meta name="twitter:title" content="Shane Taggart">
 		<meta
 			name="twitter:description"
 			content="Shane Taggart is a software developer who builds elegant and performant web applications."
-		/>
-		<meta property="twitter:url" content="https://shanetaggart.github.io/" />
-		<meta property="twitter:domain" content="shanetaggart.github.io" />
+		>
+		<meta property="twitter:url" content="https://shanetaggart.github.io/">
+		<meta property="twitter:domain" content="shanetaggart.github.io">
 		<meta
 			name="twitter:card"
 			content="https://shanetaggart.github.io/public/assets/images/profile-picture.jpeg"
-		/>
+		>
 		<meta
 			name="twitter:image"
 			content="https://shanetaggart.github.io/public/assets/images/profile-picture.jpeg"
-		/>
+		>
 
 		<!-- Preloads and Assets -->
-		<link rel="preload" href="public/css/main.css" as="style" />
-		<link rel="preload" href="public/js/main.min.js" as="script" />
+		<link rel="preload" href="public/css/main.css" as="style">
+		<link rel="preload" href="public/js/main.min.js" as="script">
 		<link
 			rel="preload"
-			href="public/assets/images/profile-picture.jpeg"
+			href="public/assets/images/profile-picture-250x250.webp"
 			as="image"
-		/>
-		<link rel="stylesheet" href="public/css/main.css" type="text/css" />
+		>
+		<link rel="stylesheet" href="public/css/main.css" type="text/css">
 		<link
 			rel="icon"
 			href="public/assets/icons/favicons/favicon-16x16.png"
 			sizes="16x16"
-		/>
+		>
 		<link
 			rel="icon"
 			href="public/assets/icons/favicons/favicon-32x32.png"
 			sizes="32x32"
-		/>
-		<link rel="icon" href="public/assets/icons/favicons/favicon.ico" />
+		>
+		<link rel="icon" href="public/assets/icons/favicons/favicon.ico">
+		<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 	</head>
 
 	<body>
@@ -81,6 +85,7 @@
 								class="icon icon--linkedin"
 								href="https://www.linkedin.com/in/shane-taggart-8a43622a2/"
 								target="_blank"
+								aria-label="Shane Taggart's LinkedIn"
 							>
 							</a>
 						</li>
@@ -89,6 +94,7 @@
 								class="icon icon--github"
 								href="https://github.com/shanetaggart"
 								target="_blank"
+								aria-label="Shane Taggart's GitHub"
 							>
 							</a>
 						</li>
@@ -97,6 +103,7 @@
 								class="icon icon--email"
 								href="mailto:staggart@eastlink.ca"
 								target="_blank"
+								aria-label="Shane Taggart's email address"
 							>
 							</a>
 						</li>
@@ -108,7 +115,7 @@
 			<div class="site-main__content">
 				<section class="hero-section">
 					<p class="hero-section__greeting">
-						<strong class="highlight ahoy">Ahoy</strong>! My name is
+						<strong class="highlight ahoy" aria-label="Hover to show a sailboat">Ahoy</strong>! My name is
 					</p>
 					<h1 class="hero-section__name">Shane Taggart</h1>
 					<h2 class="hero-section__title">
@@ -125,9 +132,11 @@
 					<div class="bio-section">
 						<picture class="bio-section__profile-picture">
 							<img
-								src="public/assets/images/profile-picture.jpeg"
+								src="public/assets/images/profile-picture-250x250.webp"
+								width="250"
+								height="250"
 								alt="Shane Taggart's profile picture."
-							/>
+							>
 						</picture>
 						<p class="content-section__content">
 							Thanks for stopping by! My name is Shane Taggart, a software
@@ -260,7 +269,7 @@
 						</p>
 					</header>
 					<div class="projects-section">
-						<article class="projects-card">
+						<article class="projects-card" aria-label="Click to flip the card">
 							<div class="projects-card__container">
 								<div class="projects-card__front">
 									<div class="projects-card__details">
@@ -268,7 +277,7 @@
 										<p class="projects-card__subtitle">Web scraper</p>
 									</div>
 									<div class="projects-card__skills" aria-hidden="true">
-										<i class="icon icon--python"></i>
+										<i class="icon icon--python" aria-label="Python"></i>
 									</div>
 								</div>
 								<div class="projects-card__back">
@@ -280,11 +289,12 @@
 										class="icon icon--github icon--black icon--large"
 										href="https://github.com/shanetaggart/check_burn_ban"
 										target="_blank"
+										aria-label="Shane Taggart's GitHub"
 									></a>
 								</div>
 							</div>
 						</article>
-						<article class="projects-card">
+						<article class="projects-card" aria-label="Click to flip the card">
 							<div class="projects-card__container">
 								<div class="projects-card__front">
 									<div class="projects-card__details">
@@ -292,7 +302,7 @@
 										<p class="projects-card__subtitle">Annual logic puzzles</p>
 									</div>
 									<div class="projects-card__skills" aria-hidden="true">
-										<i class="icon icon--python"></i>
+										<i class="icon icon--python" aria-label="Python"></i>
 									</div>
 								</div>
 								<div class="projects-card__back">
@@ -304,11 +314,12 @@
 										class="icon icon--github icon--black icon--large"
 										href="https://github.com/shanetaggart/advent_of_code_2023"
 										target="_blank"
+										aria-label="Shane Taggart's GitHub"
 									></a>
 								</div>
 							</div>
 						</article>
-						<article class="projects-card">
+						<article class="projects-card" aria-label="Click to flip the card">
 							<div class="projects-card__container">
 								<div class="projects-card__front">
 									<div class="projects-card__details">
@@ -316,9 +327,9 @@
 										<p class="projects-card__subtitle">Live-streaming tool</p>
 									</div>
 									<div class="projects-card__skills" aria-hidden="true">
-										<i class="icon icon--php icon--large"></i>
-										<i class="icon icon--js"></i>
-										<i class="icon icon--twitch"></i>
+										<i class="icon icon--php icon--large" aria-label="PHP"></i>
+										<i class="icon icon--js" aria-label="JavaScript"></i>
+										<i class="icon icon--twitch" aria-label="Twitch"></i>
 									</div>
 								</div>
 								<div class="projects-card__back">
@@ -330,6 +341,7 @@
 										class="icon icon--github icon--black icon--large"
 										href="https://github.com/shanetaggart/overlay_updater"
 										target="_blank"
+										aria-label="Shane Taggart's GitHub"
 									></a>
 								</div>
 							</div>
@@ -367,6 +379,6 @@
 			</div>
 		</footer>
 		<span id="flashlight"></span>
-		<script type="text/javascript" src="public/js/main.min.js" defer></script>
+		<script src="public/js/main.min.js" defer></script>
 	</body>
 </html>
