@@ -2,9 +2,21 @@
  * ####################
  * # Helper Functions #
  * ####################
+ * 
+ * This file contains all of the helper functions for main.js.
  */
 
 export function checkForMobile(mobileBreakpointWidth) {
+    /**
+     * Compares the width of the viewport with the provided
+     * mobile breakpoint width, to determine if the page is
+     * loaded on a mobile device.
+     * 
+     * @param  {Integer} mobileBreakpointWidth The mobile breakpoint width.
+     * @return {Boolean} Will return false if viewport is larger than the
+     *                   breakpoint, will return true if it is less than or
+     *                   equal to the breakpoint.
+     */
     
     const htmlElement = document.querySelector('html');
     const viewportWidth = htmlElement.clientWidth;
@@ -19,7 +31,16 @@ export function checkForMobile(mobileBreakpointWidth) {
 
 
 export function generateTableOfContents(parentNode, contentClass, tableClass) {
-    
+    /**
+     * Generates and inserts the HTML structure for the Table of Contents (ToC).
+     * 
+     * @param   {String} parentNode   The class of the parent node that the
+     *                                ToC should appear in as a child element.
+     * @param   {String} contentClass The class of the sibling element that
+     *                                the ToC should appear along side of.
+     * @param   {String} tableClass   The class that must be added to the ToC.
+     */
+
     let parent = document.querySelector(parentNode);
     let content = document.querySelector(contentClass);
 
@@ -56,7 +77,14 @@ export function generateTableOfContents(parentNode, contentClass, tableClass) {
 }
 
 export function sanitizeID(string) {
-    
+    /**
+     * Santizes a string to be used as an ID. Spaces are replaced
+     * with hyphens, and all text is converted to lowercase.
+     * 
+     * @param  {String} string Text to apply the sanitization to.
+     * @return  {String} The sanitized text to be used as an ID.
+     */
+
     string = string.replaceAll(' ', '-');
     string = string.toLowerCase();
     
@@ -66,7 +94,13 @@ export function sanitizeID(string) {
 
 
 export function watchElementPosition(entries) {
-    
+    /**
+     * Watches elements to that apply and remove an active class
+     * as necessary.
+     * 
+     * @param  {String} entries The entries from an Intersection Observer.
+     */
+
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
