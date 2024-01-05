@@ -1,6 +1,6 @@
-/***********
+/**********
  * Colors *
- ***********/
+ **********/
 
 // Greens
 $bright-mint: #0FD974;
@@ -14,6 +14,8 @@ $pine-green: #2B4035;
 $cosmic-latte: #fff8e7;
 $black: #000;
 $white: #fff;
+
+
 
 /*********
  * Fonts *
@@ -46,9 +48,11 @@ $font-size-3: 1.75rem;
 $font-size-2: 2rem;
 $font-size-1: 5.25rem;
 
+
+
 /*********************
  * General Variables *
- ********************/
+ *********************/
 
 // Alphas
 $low-alpha: 0.05;
@@ -71,9 +75,36 @@ $footer-shadow: 0px -1px 1px 1px rgba($white, $low-alpha);
 $header-divider: 2px solid $phthalo-green;
 
 
-/***************
+
+/**************
 * Breakpoints *
 ***************/
 
 $breakpoint-up-vertical-tablet: 768px;
 $breakpoint-up-mobile: 426px;
+
+
+
+/**************
+ * Animations *
+ **************/
+
+@keyframes title-slide {
+    0% {
+        transform: translateY(0%),
+    }
+
+    25% {
+        transform: translateY(-100%),
+    }
+
+    50% {
+        transform: translateY(-200%),
+    }
+
+    100% {
+        transform: translateY(-300%),
+    }
+}
+
+
