@@ -323,7 +323,7 @@ body {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        height: 3.75rem;
+        height: 3rem;
         overflow: hidden;
 
         li {
@@ -344,6 +344,10 @@ body {
 
         &__title {
             font-size: $font-size-2;
+        }
+
+        ul {
+            height: 3.75rem;
         }
     }
 
