@@ -52,21 +52,38 @@ export function generateTableOfContents(parentNode, contentClass, tableClass) {
     articles.forEach((article) => {
 
         let currentArticleHeading = article.querySelector('h4');
-        let articleHeading = currentArticleHeading.innerText;
-
-        let articleId = sanitizeID(articleHeading);
+        let currentArticleParentHeading = article.querySelector('h3');
         
-        currentArticleHeading.parentElement.id = articleId;
+        if (currentArticleParentHeading) {
+            let articleParentHeading = currentArticleParentHeading.innerText;
+            
+            let listItem = document.createElement('li');
+            let strong = document.createElement('strong');
+            let strongClasses = ['highlight', 'highlight--bold']
+            
+            strong.classList.add(...strongClasses);
+            listItem.classList.add('employer');
+            strong.innerText = articleParentHeading;
 
-        let listItem = document.createElement('li');
-        let anchor = document.createElement('a');
+            listItem.appendChild(strong);
+            unorderedList.appendChild(listItem);
+        }
 
-        anchor.href = '#' + articleId;
-        anchor.innerText = articleHeading;
+        if (currentArticleHeading) {
+            let articleHeading = currentArticleHeading.innerText;
+            let articleId = sanitizeID(articleHeading);
+        
+            currentArticleHeading.parentElement.id = articleId;
 
-        listItem.appendChild(anchor);
-        unorderedList.appendChild(listItem);
+            let listItem = document.createElement('li');
+            let anchor = document.createElement('a');
 
+            anchor.href = '#' + articleId;
+            anchor.innerText = articleHeading;
+
+            listItem.appendChild(anchor);
+            unorderedList.appendChild(listItem);
+        }
     });
 
     tableOfContents.classList.add(tableClass);
