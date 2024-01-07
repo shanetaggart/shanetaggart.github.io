@@ -411,6 +411,50 @@ body {
                 background-color: rgba(186, 207, 41, $low-mid-alpha);
             }
 
+            &--excel {
+                border-color: #217647;
+                background-color: rgba(#217647, $low-mid-alpha);
+            }
+
+            &--digital-certificates {
+                border-color: goldenrod;
+                background-color: rgba(goldenrod, $low-mid-alpha);
+            }
+
+            &--mfa {
+                border-color: lime;
+                background-color: rgba(lime, $low-mid-alpha);
+            }
+
+            &--photoshop {
+                border-color: #001e36;
+                background-color: rgba(#001e36, $low-mid-alpha);
+            }
+
+            &--illustrator {
+                border-color: #330000;
+                background-color: rgba(#330000, $low-mid-alpha);
+            }
+
+            &--storyline-360 {
+                border-color: skyblue;
+                background-color: rgba(skyblue, $low-mid-alpha);
+            }
+
+            &--audacity {
+                border-color: peru;
+                background-color: rgba(peru, $low-mid-alpha);
+            }
+
+            &--camtasia {
+                border-color: #3c7d00;
+                background-color: rgba(#3c7d00, $low-mid-alpha);
+            }
+
+            &--lms {
+                border-color: sienna;
+                background-color: rgba(sienna, $low-mid-alpha);
+            }
         }
     }
 }
@@ -594,6 +638,12 @@ body {
                     margin: 0 0 1em 0;
                     padding: 0.5em 0;
                     text-decoration: none;
+                }
+
+                &.employer {
+                    padding: 0.5em 0;
+                    margin: 0 0 0 2em;
+                    pointer-events: none;
                 }
             }
         }
