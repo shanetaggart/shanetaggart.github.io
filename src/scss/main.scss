@@ -289,7 +289,7 @@ body {
     }
 
     &__content {
-        margin: 0;
+        margin: 1em 0;
 
         &--instructions {
             text-align: center;
@@ -300,6 +300,117 @@ body {
                     transform: translateY(20%);
                 }
             }
+        }
+    }
+
+    .skills {
+        list-style: none;
+        padding: 0;
+        margin: 1.75em 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        .skill {
+            border: 1px solid $black;
+            border-radius: 1.25em;
+            padding: 0.25em 1em;
+
+            &--networking {
+                border-color: #555;
+                background-color: rgba(#555, $low-mid-alpha);
+            }
+
+            &--hardware {
+                border-color: #aaa;
+                background-color: rgba(#aaa, $low-mid-alpha);
+            }
+
+            &--visualbasic {
+                border-color: #38a7f6;
+                background-color: rgba(#38a7f6, $low-mid-alpha);
+            }
+
+            &--java {
+                border-color: #e76f00;
+                background-color: rgba(#e76f00, $low-mid-alpha);
+            }
+
+            &--css {
+                border-color: midnightblue;
+                background-color: rgba(midnightblue, $low-mid-alpha);
+            }
+
+            &--database-management {
+                border-color: #a33639;
+                background-color: rgba(#a33639, $low-mid-alpha);
+            }
+
+            &--security {
+                border-color: darkgoldenrod;
+                background-color: rgba(darkgoldenrod, $low-mid-alpha);
+            }
+
+            &--server-management {
+                border-color: maroon;
+                background-color: rgba(maroon, $low-mid-alpha);
+            }
+
+            &--active-directory {
+                border-color: rebeccapurple;
+                background-color: rgba(rebeccapurple, $low-mid-alpha);
+            }
+
+            &--python {
+                border-color: #ffd54a;
+                background-color: rgba(#ffd54a, $low-mid-alpha);
+            }
+
+            &--dns {
+                border-color: teal;
+                background-color: rgba(teal, $low-mid-alpha);
+            }
+            
+            &--wordpress {
+                border-color: $black;
+                background-color: rgba($black, $low-mid-alpha);
+            }
+
+            &--php {
+                border-color: rgb(119, 123, 179);
+                background-color: rgba(119, 123, 179, $low-mid-alpha);
+            }
+
+            &--js {
+                border-color: rgb(247, 223, 30);
+                background-color: rgba(247, 223, 30, $low-mid-alpha);
+            }
+
+            &--acf {
+                border-color: rgb(0, 218, 180);
+                background-color: rgba(0, 218, 180, $low-mid-alpha);
+            }
+
+            &--sass {
+                border-color: rgb(207, 100, 154);
+                background-color: rgba(207, 100, 154, $low-mid-alpha);
+            }
+
+            &--cornerstone {
+                border-color: $white;
+                background-color: rgba($white, $low-mid-alpha);
+            }
+
+            &--timber {
+                border-color: rgb(43, 64, 53);
+                background-color: rgba(43, 64, 53, $low-mid-alpha);
+            }
+
+            &--twig {
+                border-color: rgb(186, 207, 41);
+                background-color: rgba(186, 207, 41, $low-mid-alpha);
+            }
+
         }
     }
 }
@@ -492,62 +603,6 @@ body {
         article {
             margin: 0 0 5em 0;
             scroll-margin-top: 150px;
-        }
-    }
-
-    &__skills {
-        list-style: none;
-        padding: 0;
-        margin: 1.75em 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-
-        .skill {
-            border: 1px solid $black;
-            border-radius: 1.25em;
-            padding: 0.25em 1em;
-
-            &--wordpress {
-                border-color: $black;
-                background-color: rgba($black, $low-mid-alpha);
-            }
-
-            &--php {
-                border-color: rgb(119, 123, 179);
-                background-color: rgba(119, 123, 179, $low-mid-alpha);
-            }
-
-            &--js {
-                border-color: rgb(247, 223, 30);
-                background-color: rgba(247, 223, 30, $low-mid-alpha);
-            }
-
-            &--acf {
-                border-color: rgb(0, 218, 180);
-                background-color: rgba(0, 218, 180, $low-mid-alpha);
-            }
-
-            &--sass {
-                border-color: rgb(207, 100, 154);
-                background-color: rgba(207, 100, 154, $low-mid-alpha);
-            }
-
-            &--cornerstone {
-                border-color: $white;
-                background-color: rgba($white, $low-mid-alpha);
-            }
-
-            &--timber {
-                border-color: rgb(43, 64, 53);
-                background-color: rgba(43, 64, 53, $low-mid-alpha);
-            }
-
-            &--twig {
-                border-color: rgb(186, 207, 41);
-                background-color: rgba(186, 207, 41, $low-mid-alpha);
-            }
-
         }
     }
 }
